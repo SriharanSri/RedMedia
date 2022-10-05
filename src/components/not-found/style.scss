@@ -1,0 +1,20 @@
+@import "../../styles/common";
+
+.gems-wrapper {
+  background-image: url("../../images/gems/body-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  min-height: calc(100vh - 4.5rem);
+  position: relative;
+}
+.linkColor {
+  color: #ff3e92;
+  &:hover {
+    color: #fff;
+  }
+}
+.textColor {
+  color: #fff;
+}

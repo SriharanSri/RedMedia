@@ -1,0 +1,238 @@
+@import "../../../styles/common";
+
+.home-hero-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  min-height: calc(100vh - 4.5rem);
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  @media screen and (max-width: 767px) {
+    min-height: calc(100vh);
+  }
+  img {
+    user-select: none;
+  }
+  .image-left {
+    position: absolute;
+    left: -10rem;
+    bottom: 15%;
+    width: 35vh;
+    object-fit: contain;
+    // height: 25rem;
+    // @media screen and (max-width: 1200px) {
+    //   width: 30%;
+    // }
+    @media screen and (max-width: 991px) {
+      left: -9rem;
+      top: 17%;
+      height: 75vh;
+      bottom: initial;
+    }
+    @media screen and (max-width: 767px) {
+      left: -8rem;
+      top: 13%;
+      height: 75vh;
+      bottom: initial;
+    }
+    @media screen and (max-height: 599px) {
+      width: 50vh;
+    }
+  }
+  .image-right {
+    position: absolute;
+    right: -7rem;
+    bottom: 0;
+    height: 75vh;
+    // @media screen and (max-width: 1200px) {
+    //   width: 40%;
+    // }
+    @media screen and (max-width: 991px) {
+      right: -4%;
+      top: 7%;
+      height: 75vh;
+      bottom: initial;
+    }
+    @media screen and (max-width: 767px) {
+      right: -2rem;
+      top: 10%;
+      height: 75vh;
+      bottom: initial;
+    }
+  }
+  .carousel-block {
+    margin-top: 10rem;
+    max-width: 55%;
+    @media screen and (max-width: 520px) {
+      margin-top: 6rem;
+    }
+    .hero-logo {
+      height: 25rem;
+      margin-bottom: 0.5rem;
+      width: 100%;
+      object-fit: contain;
+      object-position: center;
+      margin: 0 auto 2rem;
+      // max-width: 55%;
+      // @media screen and (max-width: 767px) {
+      //   height: 17rem;
+      //   margin-top: 12rem;
+      // }
+      // @media screen and (max-width: 425px) {
+      //   height: 17rem;
+      //   margin-top: 12rem;
+      // }
+      @media screen and (max-width: 520px) {
+        margin: 0 auto 0rem;
+      }
+    }
+    .owl-nav {
+      margin-top: 10px;
+      text-align: center;
+      -webkit-tap-highlight-color: transparent;
+      position: absolute;
+      width: 100%;
+      top: calc(50% - 4rem);
+      @media screen and (max-width: 767px) {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+      }
+      button.owl-prev,
+      button.owl-next {
+        height: 3rem;
+        width: 3rem;
+        min-width: 4rem;
+        min-height: 4rem;
+        border: 0.1rem solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50rem;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        user-select: none;
+        overflow: hidden;
+        span {
+          font-size: 4rem;
+          position: relative;
+          top: -5px;
+        }
+        @media screen and (max-width: 767px) {
+          position: relative;
+          top: initial;
+        }
+      }
+      button.owl-prev {
+        left: -5rem;
+        @media screen and (max-width: 767px) {
+          left: initial;
+        }
+      }
+      button.owl-next {
+        right: -5rem;
+        @media screen and (max-width: 767px) {
+          right: initial;
+        }
+      }
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    color: #fff;
+    max-width: 45rem;
+    margin-bottom: 2rem;
+    font-family: $gothambook;
+    position: relative;
+    margin-top: 3rem;
+    @media screen and (max-width: 767px) {
+      width: 70%;
+    }
+  }
+  .hero-btn-block {
+    margin: 1.5rem 0 3rem;
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+    }
+    a {
+      color: #ffffff;
+      font-family: $gothammedium;
+      margin-right: 1rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      gap: 2rem;
+      @media screen and (max-width: 767px) {
+        flex-direction: column-reverse;
+        margin-bottom: 1rem;
+      }
+      .img-box {
+        height: 2.5rem;
+        width: 2.5rem;
+        max-height: 2.5rem;
+        max-width: 2.5rem;
+        background: #ffffff61;
+        border-radius: 50rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0.5rem;
+        transform: scale(2);
+        @media screen and (max-width: 767px) {
+          margin-bottom: 1rem;
+          height: 3.5rem;
+          width: 3.5rem;
+          max-height: 3.5rem;
+          max-width: 3.5rem;
+        }
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+          @media screen and (max-width: 767px) {
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .gems-btn-block {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column-reverse;
+
+    align-items: center;
+
+    a {
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      font-family: $vag-rounded-bold;
+    }
+  }
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #ff3e92 !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: #67468c !important;
+}

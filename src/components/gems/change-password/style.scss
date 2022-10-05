@@ -1,0 +1,110 @@
+@import "../../../styles/common";
+
+.modal-content {
+  background-color: #ffe500;
+  .modal-header,
+  .modal-footer {
+    border: none;
+  }
+  .modal-header {
+    padding: 1.1rem 2.1rem;
+    margin: 1rem 0;
+    .modal-title {
+      color: #4d3686;
+      margin-bottom: 1rem;
+      font-family: $gothammedium;
+      margin: 0;
+    }
+    .model-close-btn {
+      svg {
+        font-size: 2rem;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+  .password-terms {
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+    color: #222 !important;
+    font-family: $gothammedium;
+    background-color: #fff;
+  }
+
+  .modal-body {
+    padding: 1.1rem 2.1rem;
+    .user-profile-image-block {
+      height: 12rem;
+      width: 12rem;
+      background: #000;
+      overflow: hidden;
+      border-radius: 50rem;
+      position: relative;
+      z-index: 2;
+      margin: 0 auto 2rem;
+      &::before {
+        content: "";
+        position: absolute;
+        border: 0.1rem solid #ffe500;
+        height: 94%;
+        width: 94%;
+        border-radius: 50rem;
+        top: 0.3rem;
+        left: 0.3rem;
+        right: 0.3rem;
+        bottom: 0.3rem;
+      }
+      .user-image {
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+
+    .form-control {
+      height: 2.2rem;
+      box-shadow: none !important;
+      padding: 0.8rem 2.5rem 0.8rem 0.8rem;
+      border-radius: 8px;
+      border: solid 1px #ff3e92 !important;
+      background-color: #ffffff78;
+      height: 3rem;
+    }
+    .input-title {
+      margin-bottom: 0.8rem;
+      color: #ff3e92;
+      font-size: 1rem;
+      font-family: $gothammedium;
+    }
+  }
+  .modal-footer {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 1.1rem 2.1rem;
+    button.btn.btn-primary {
+      border-radius: 50rem;
+      border: solid 1px #ff3e92;
+      background-color: #ff3e92;
+      color: #fff;
+      display: block;
+      width: 100%;
+      margin: 0 0 0;
+      padding: 0.6rem 2rem;
+      transition: 0.3s;
+      position: relative;
+      max-width: 11rem;
+      letter-spacing: 0.1rem;
+      font-family: "gothambold" !important;
+    }
+  }
+}
+.tooltip-inner{
+  max-width: 200px;
+  padding: 0.25rem 0.5rem;
+  color: #181818;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 0.25rem;
+}
+

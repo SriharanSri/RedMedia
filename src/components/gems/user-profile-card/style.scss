@@ -1,0 +1,173 @@
+@import "../../../styles/common";
+
+.profile-block {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 3rem;
+  align-items: center;
+
+  position: relative;
+  left: 3rem;
+  @media screen and (max-width: 991px) {
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .user-profile-image-block {
+    height: 12rem;
+    width: 12rem;
+    min-height: 12rem;
+    min-width: 12rem;
+    background: #000;
+    overflow: hidden;
+    border-radius: 50rem;
+    position: relative;
+    z-index: 2;
+    &::before {
+      content: "";
+      position: absolute;
+      border: 0.1rem solid #ffe500;
+      height: 94%;
+      width: 94%;
+      border-radius: 50rem;
+      top: 0.3rem;
+      left: 0.3rem;
+      right: 0.3rem;
+      bottom: 0.3rem;
+    }
+    .user-image {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+  .user-profile-info-block {
+    padding: 1rem 2rem;
+    background: #e7e7e724;
+    width: calc(100% - 10rem);
+    padding-left: 7rem;
+    position: relative;
+    min-height: 11rem;
+    left: -5rem;
+    z-index: 0;
+    border-radius: 2rem;
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      padding-left: 2rem;
+      left: 0;
+      border-radius: 2rem;
+      margin-top: 2rem;
+    }
+    .header-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem 0;
+      @media screen and (max-width: 767px) {
+        justify-content: center;
+        align-items: center;
+      }
+      h3 {
+        font-size: 2rem;
+        font-family: $vag-rounded-regular;
+        color: #fff;
+      }
+      span.editweb {
+        font-size: 1.1rem;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        font-family: $vag-rounded-regular;
+        svg {
+          font-size: 1.2rem;
+        }
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+    }
+    .info-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem 0;
+      @media screen and (max-width: 767px) {
+        margin: 0;
+      }
+      .info-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 1rem;
+        font-size: 1.3rem;
+        @media screen and (max-width: 767px) {
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          max-width: 25rem;
+          margin: 1rem auto 1rem;
+        }
+        li {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          @media screen and (max-width: 767px) {
+            margin-bottom: 1rem;
+          }
+          svg {
+            color: #ff3e92;
+            margin-right: 0.5rem;
+          }
+          span,
+          a {
+            color: #ffe500;
+            text-decoration: none;
+            cursor: pointer;
+            font-family: $gothambook;
+            font-family: "gothambook" !important;
+            width: calc(100% - 2rem);
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+          &.change-password {
+            svg {
+              color: #ffffff;
+            }
+            a,
+            span {
+              color: #ffffff;
+              cursor: pointer;
+              align-items: center;
+              font-family: $vag-rounded-regular;
+            }
+          }
+        }
+      }
+    }
+    span.editmobile {
+      font-size: 1.1rem;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      display: none;
+      font-family: $vag-rounded-regular;
+      svg {
+        font-size: 1.2rem;
+      }
+      @media screen and (max-width: 767px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+.underline {
+  display: inline-block;
+  text-decoration: underline;
+}

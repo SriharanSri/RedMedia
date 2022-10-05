@@ -1,0 +1,229 @@
+@import "../../../styles/common";
+
+.prebook-card {
+  border: 0.4rem solid #f9f8fb;
+  border-radius: 3rem;
+  background-color: #f7bb04;
+  padding: 2rem;
+  box-sizing: border-box;
+  max-width: 30%;
+  width: 100%;
+  position: relative;
+  margin-bottom: 2rem;
+  @media screen and (max-width: 991px) {
+    max-width: 28rem;
+  }
+  h2.card-title {
+    color: #4d3686;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: $vag-rounded-bold;
+    white-space: nowrap;
+  }
+  .img-block {
+    width: 90%;
+    height: 24rem;
+    overflow: hidden;
+    margin: 1rem auto;
+    background: #673C8E;
+    border-radius: 2rem;
+    border: 0.2rem solid #f9f8fb;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(42, 18, 74, 50%);
+    img.nft-image {
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+  .edit-text:focus, input:focus{
+    outline: none;
+}
+
+  .edit-text{
+    background-color: #72038100;
+    border-radius: 28px;
+    border-color: #72038100;
+    margin: 0;
+    color: #fac100;
+    font-size: 1.5rem !important;
+    font-family: "vag_rounded_bold" !important;
+    width: 3rem;
+    line-height: 1.3;
+
+    justify-content: center;
+    text-align: center;
+   
+   
+  }
+  input, textarea {
+    font-size: 1.5rem !important;
+    padding: 0;
+    width: 10rem;
+}
+.edit-text{
+  input, textarea {
+    font-size: 1.5rem !important;
+
+}
+}
+
+.cnf-btn{
+
+  font-family: "vag_rounded_bold" !important;
+    background: #f32685;
+    color: #fff;
+    padding: 0.4rem 2rem;
+    width: auto;
+    border: 0.3rem solid #fff;
+    border-radius: 50rem;
+    box-shadow: none;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: auto;
+    font-size: 1.5rem;
+    position: absolute;
+    top: calc(100% - 1.5rem);
+    left: 22px;
+    right: -56px;
+    margin-top: -11px;
+}
+
+  .counter-box,
+  .preview-box {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    .pill-box {
+      width: 50%;
+      align-items: center;
+      justify-content: center;
+      .key-lable {
+        color: #fff;
+        font-size: 1.2rem;
+        font-family: $vag-rounded-bold;
+        white-space: nowrap;
+        letter-spacing: 0.1rem;
+        margin-bottom: 0.2rem;
+      }
+      .value-label-inputbox {
+        position: relative;
+        margin-bottom: 2rem;
+        input {
+          padding: 0.4rem 1rem;
+          background-color: #683f80;
+          border: 0.2rem solid #fff;
+          border-radius: 50rem;
+          width: 100%;
+          height: auto;
+          margin: 0;
+          color: #fac100;
+          font-size: 1.5rem !important;
+          font-family: $vag-rounded-bold;
+          line-height: 1.3;
+          outline: 0;
+          box-shadow: none;
+          &:hover,
+          &:active {
+            outline: 0;
+            box-shadow: none;
+          }
+          &:focus {
+            outline: 0;
+            box-shadow: none;
+            border: 0.25rem solid #fff;
+          }
+          &::placeholder {
+            color: #a19773;
+          }
+        }
+        .preview-btn {
+          background: #f32685;
+          color: #fff;
+          padding: 0.1rem 1rem;
+          width: auto;
+          border: 0.16rem solid #fff;
+          border-radius: 50rem;
+          box-shadow: none;
+          max-width: fit-content;
+          position: absolute;
+          top: calc(100% - 0.5rem);
+          left: 0;
+          right: 0;
+          margin: auto;
+          font-size: 0.8rem;
+          font-family: $vag-rounded-bold;
+          &:hover {
+            transform: scale(1.1);
+            transition: all ease-out 200ms;
+          }
+        }
+      }
+      .value-label {
+        margin-bottom: 2rem;
+        padding: 0.4rem 1rem;
+        background-color: #683f80;
+        border: 0.2rem solid #fff;
+        border-radius: 50rem;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 3rem;
+        overflow: hidden;
+        .add-btn {
+          color: #fff;
+          font-size: 1.5rem;
+          text-transform: uppercase;
+          font-family: $vag-rounded-bold;
+          white-space: nowrap;
+          cursor: pointer;
+          line-height: 1.3;
+          user-select: none;
+          &:hover {
+            transform: scale(1.25);
+            transition: all ease-out 200ms;
+          }
+        }
+        p {
+          margin: 0;
+          color: #fac100;
+          font-size: 1.5rem;
+          font-family: $vag-rounded-bold;
+          line-height: 1.3;
+        }
+      }
+      p.value-label {
+        margin: 0;
+        color: #fac100;
+        font-size: 1.5rem;
+        font-family: $vag-rounded-bold;
+        line-height: 1.3;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .buy-btn {
+    font-family: $vag-rounded-bold;
+    background: #f32685;
+    color: #fff;
+    padding: 0.4rem 2rem;
+    width: auto;
+    border: 0.3rem solid #fff;
+    border-radius: 50rem;
+    box-shadow: none;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: auto;
+    font-size: 1.5rem;
+    position: absolute;
+    top: calc(100% - 1.5rem);
+    left: 0;
+    right: 0;
+    &:hover {
+      transform: scale(1.1);
+      transition: all ease-out 200ms;
+    }
+  }
+}

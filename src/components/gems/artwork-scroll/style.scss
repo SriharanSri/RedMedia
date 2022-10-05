@@ -1,0 +1,200 @@
+@import "../../../styles/common";
+
+article.artwork-scroll {
+  position: relative;
+  height: calc(100vh - 18rem);
+  overflow: hidden;
+  overflow-y: auto;
+  @media screen and (max-width: 767px) {
+    padding: 3rem 0;
+    overflow-x: auto;
+  }
+  .artwork-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    @media screen and (max-width: 767px) {
+      flex-wrap: nowrap;
+    }
+
+    .artwork-items {
+      width: 50%;
+      padding: 0 1rem;
+      &:nth-child(odd) {
+        position: relative;
+        top: 10rem;
+        @media screen and (max-width: 767px) {
+          top: 0;
+        }
+      }
+      .artwork-card {
+        background: #fff;
+        margin-bottom: 2rem;
+        box-shadow: inset 0 0 10rem #63636380;
+        border-radius: 0.8rem;
+        padding: 0.5rem;
+        @media screen and (max-width: 767px) {
+          width: 10rem;
+        }
+        img {
+          width: 100%;
+        }
+
+        .artwork-name {
+          padding: 0.2rem 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 0.5rem;
+          margin-bottom: 0.2rem;
+
+          .heart-icon {
+            font-size: 1.5rem;
+            color: #63636380;
+            margin-right: 0.5rem;
+            &.liked {
+              color: #dd215a;
+            }
+          }
+          span {
+            color: #000000;
+            text-transform: capitalize;
+            font-size: 1.2rem;
+
+            font-family: $gothambook;
+            width: 70%;
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            @media screen and (max-width: 767px) {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .gem-icon {
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    @media screen and (max-width: 767px) {
+      height: 3rem;
+      width: 3rem;
+    }
+    @media screen and (min-width: 768px) {
+      &.gem1 {
+        transform: translate(0rem, 8rem);
+        z-index: 1;
+      }
+      &.gem2 {
+        transform: translate(16rem, 19rem);
+        z-index: 0;
+      }
+      &.gem3 {
+        transform: translate(30rem, 41rem);
+        z-index: 1;
+      }
+      &.gem4 {
+        transform: translate(0rem, 50rem);
+        z-index: 1;
+      }
+      &.gem5 {
+        transform: translate(17rem, 62rem);
+        z-index: 1;
+      }
+      &.gem6,
+      &.gem7 {
+        display: none;
+      }
+      // &.gem6 {
+      //   transform: translate(0rem, 86rem);
+      //   z-index: 1;
+      // }
+      // &.gem7 {
+      //   transform: translate(30rem, 102rem);
+      //   z-index: 1;
+      // }
+      // &.gem8 {
+      //   transform: translate(13rem, 111rem);
+      //   z-index: 1;
+      // }
+      // &.gem9 {
+      //   transform: translate(0rem, 125rem);
+      //   z-index: 1;
+      // }
+      // &.gem10 {
+      //   transform: translate(16rem, 135rem);
+      //   z-index: 1;
+      // }
+      // &.gem11 {
+      //   transform: translate(30rem, 155rem);
+      //   z-index: 0;
+      // }
+      // &.gem12 {
+      //   transform: translate(15rem, 172rem);
+      //   z-index: 1;
+      // }
+      // &.gem13 {
+      //   transform: translate(0rem, 198rem);
+      //   z-index: 1;
+      // }
+      // &.gem14 {
+      //   transform: translate(16rem, 208rem);
+      //   z-index: 0;
+      // }
+    }
+    @media screen and (max-width: 767px) {
+      &.gem1 {
+        transform: translate(0rem, -1rem);
+        z-index: 1;
+      }
+      &.gem2 {
+        transform: translate(11rem, 12rem);
+        z-index: 0;
+      }
+      &.gem3 {
+        transform: translate(23rem, 5rem);
+        z-index: 1;
+      }
+      &.gem4 {
+        transform: translate(37rem, -2rem);
+        z-index: 1;
+      }
+      &.gem5 {
+        transform: translate(48rem, 12rem);
+        z-index: 1;
+      }
+      &.gem6 {
+        transform: translate(59rem, 2rem);
+        z-index: 1;
+      }
+      &.gem7 {
+        transform: translate(69rem, 10rem);
+        z-index: 1;
+      }
+    }
+  }
+}
+
+.picks {
+  width: 100%;
+  font-family: $vag_rounded_bold;
+  text-align: center;
+  color: #4e3686;
+  position: sticky;
+  margin: 1rem 0;
+  top: 1px;
+  height: 2rem;
+  z-index: 10;
+  background: #ffe501;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}

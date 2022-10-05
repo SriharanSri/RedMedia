@@ -1,0 +1,128 @@
+@import "../../../styles/common";
+
+.prebook-hero-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  min-height: calc(100vh - 4.5rem);
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 3rem;
+  @media screen and (max-width: 767px) {
+    min-height: calc(100vh);
+    padding-top: 8rem;
+  }
+  img {
+    user-select: none;
+  }
+  .image-left {
+    position: absolute;
+    left: -10rem;
+    bottom: 15%;
+    width: 35vh;
+    object-fit: contain;
+    // height: 25rem;
+    // @media screen and (max-width: 1200px) {
+    //   width: 30%;
+    // }
+    @media screen and (max-width: 991px) {
+      left: -13rem;
+      top: 13%;
+      height: 75vh;
+      bottom: initial;
+    }
+    @media screen and (max-width: 767px) {
+      left: -12rem;
+      top: 13%;
+      height: 75vh;
+      bottom: initial;
+    }
+    @media screen and (max-width: 560px) {
+      left: -10rem;
+    }
+    @media screen and (max-height: 599px) {
+      width: 50vh;
+    }
+  }
+  .image-right {
+    position: absolute;
+    right: -7rem;
+    bottom: 0;
+    height: 75vh;
+    // @media screen and (max-width: 1200px) {
+    //   width: 40%;
+    // }
+    @media screen and (max-width: 991px) {
+      right: -7%;
+      top: 7%;
+      height: 75vh;
+      bottom: initial;
+    }
+    @media screen and (max-width: 767px) {
+      right: -6rem;
+      top: 10%;
+      height: 75vh;
+      bottom: initial;
+    }
+  }
+  .prebook-btn-block {
+    margin: 1.5rem 0 3rem;
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+    }
+    a {
+      color: #ffffff;
+      font-family: $gothammedium;
+      margin-right: 1rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      gap: 2rem;
+      @media screen and (max-width: 767px) {
+        flex-direction: column-reverse;
+        margin-bottom: 1rem;
+      }
+      .img-box {
+        height: 2.5rem;
+        width: 2.5rem;
+        max-height: 2.5rem;
+        max-width: 2.5rem;
+        background: #ffffff61;
+        border-radius: 50rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0.5rem;
+        transform: scale(2);
+        @media screen and (max-width: 767px) {
+          margin-bottom: 1rem;
+          height: 3.5rem;
+          width: 3.5rem;
+          max-height: 3.5rem;
+          max-width: 3.5rem;
+        }
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+          @media screen and (max-width: 767px) {
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+      }
+    }
+  }
+}

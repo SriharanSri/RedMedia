@@ -1,0 +1,241 @@
+@import "../../../styles/common";
+
+article.pre-booked-nft.gems-nft-cart {
+  width: 100%;
+  background: #fff;
+  margin-bottom: 2rem;
+  box-shadow: inset 0 0 10rem #63636380;
+  border-radius: 0.8rem;
+  padding: 0rem;
+  position: relative;
+  font-family: $vag-rounded-bold;
+  height: 32rem;
+
+  .gems-nft-img-block {
+    width: 100%;
+    padding: 0.2rem;
+    position: relative;
+
+    img {
+      width: 100%;
+      border-radius: 0.5rem 0.5rem 0 0;
+      height: 20rem;
+      object-fit: cover;
+      object-position: center;
+
+      &.drop-bg {
+        object-fit: contain;
+        background: #1b1261;
+      }
+
+      @media screen and (max-width: 767px) {
+        height: 15rem;
+      }
+    }
+  }
+
+  .gems-nft-content-block {
+    padding: 1rem;
+    position: relative;
+
+    .uin-band {
+      background: #ff3e92;
+      position: absolute;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      width: 75%;
+      border-radius: 5rem;
+      inset: -1.5rem 0 0 50%;
+      height: fit-content;
+      transform: translateX(-50%);
+      font-family: $vag-rounded-bold;
+      border: 0.15rem solid white;
+
+      h5 {
+        margin: 0;
+        font-size: 1.1rem;
+        cursor: pointer;
+
+        &.pb-key {
+          width: 50%;
+          text-align: center;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          @media screen and (max-width: 991px) {
+            font-size: 1rem;
+          }
+
+          svg {
+            color: white;
+            margin-left: 0.5rem;
+            font-size: 1.2rem;
+          }
+        }
+
+        &.key {
+          display: flex;
+          align-items: center;
+          width: 50%;
+          text-align: left;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-family: $vag-rounded-bold;
+
+          @media screen and (max-width: 991px) {
+            font-size: 1rem;
+          }
+
+          svg {
+            color: white;
+            margin-left: 0.5rem;
+            font-size: 1.2rem;
+          }
+        }
+
+        &.value {
+          flex: 2;
+          text-align: right;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: clip;
+          font-family: $vag-rounded-bold;
+
+          @media screen and (max-width: 991px) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    .nft-name {
+      margin: 1rem 0 1rem;
+      padding: 0.5rem;
+      font-size: 1.6rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+      color: #1b1362;
+      font-family: $vag-rounded-bold;
+    }
+
+    .nft-add-info {
+      margin: 0 0 0;
+      padding: 0;
+
+      li {
+        width: 100% !important;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        font-weight: bolder;
+
+        h5 {
+          margin: 0;
+          font-family: $vag-rounded-bold;
+
+          &.key {
+            color: #797979;
+            width: 50%;
+            text-align: left;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+
+          &.value {
+            color: #797979;
+            flex: 2;
+            text-align: right;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: clip;
+          }
+        }
+      }
+    }
+  }
+
+  .share-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ff3e92e0;
+    z-index: 1;
+    border-radius: 0.5rem 0.5rem 0 0;
+    text-align: center;
+    visibility: hidden;
+
+    h5 {
+      font-size: 1.2rem;
+      text-shadow: 0px 0px 5px #00000069;
+      margin-bottom: 1.5rem;
+      color: #ffffff;
+      font-family: $vag-rounded-regular;
+    }
+
+    .popup-share-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: auto;
+
+      li {
+        a {
+          color: #000;
+          display: flex;
+          padding: 0rem;
+          text-decoration: none;
+          font-size: 1.1rem;
+          height: 2.5rem;
+          width: 2.5rem;
+          margin: 0 0.2rem;
+          background-image: url("../../../images/gems/social-links-popup.svg");
+          background-size: 11.8rem;
+          background-repeat: no-repeat;
+          background-color: #fff;
+          border-radius: 50rem;
+          cursor: pointer;
+
+          &.fb {
+            background-position: 0rem;
+          }
+
+          &.insta {
+            background-position: -3.1rem;
+          }
+
+          &.twitter {
+            background-position: -6.2rem;
+          }
+
+          &.whatsapp {
+            background-position: -9.3rem;
+          }
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .share-box {
+      visibility: visible;
+    }
+  }
+}

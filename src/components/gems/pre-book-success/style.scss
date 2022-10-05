@@ -1,0 +1,335 @@
+@import "../../../styles/common";
+
+section.prebook-hero-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  min-height: calc(100vh - 4.5rem);
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  @media screen and (max-width: 767px) {
+    min-height: calc(100vh);
+    padding-top: 8rem;
+  }
+  img {
+    user-select: none;
+  }
+  .image-left {
+    position: absolute;
+    left: -10rem;
+    bottom: 15%;
+    width: 35vh;
+    object-fit: contain;
+    // height: 25rem;
+    // @media screen and (max-width: 1200px) {
+    //   width: 30%;
+    // }
+    @media screen and (max-width: 991px) {
+      left: -13rem;
+      top: 13%;
+      height: 75vh;
+      bottom: initial;
+    }
+    @media screen and (max-width: 767px) {
+      left: -12rem;
+      top: 13%;
+      height: 75vh;
+      bottom: initial;
+    }
+    @media screen and (max-width: 560px) {
+      left: -10rem;
+    }
+    @media screen and (max-height: 599px) {
+      width: 50vh;
+    }
+  }
+  .image-right {
+    position: absolute;
+    right: -7rem;
+    bottom: 0;
+    height: 75vh;
+    // @media screen and (max-width: 1200px) {
+    //   width: 40%;
+    // }
+    @media screen and (max-width: 991px) {
+      right: -7%;
+      top: 7%;
+      height: 75vh;
+      bottom: initial;
+    }
+    @media screen and (max-width: 767px) {
+      right: -6rem;
+      top: 10%;
+      height: 75vh;
+      bottom: initial;
+    }
+  }
+  .prebook-btn-block {
+    margin: 1.5rem 0 3rem;
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+    }
+    a {
+      color: #ffffff;
+      font-family: $gothammedium;
+      margin-right: 1rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      gap: 2rem;
+      @media screen and (max-width: 767px) {
+        flex-direction: column-reverse;
+        margin-bottom: 1rem;
+      }
+      .img-box {
+        height: 2.5rem;
+        width: 2.5rem;
+        max-height: 2.5rem;
+        max-width: 2.5rem;
+        background: #ffffff61;
+        border-radius: 50rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0.5rem;
+        transform: scale(2);
+        @media screen and (max-width: 767px) {
+          margin-bottom: 1rem;
+          height: 3.5rem;
+          width: 3.5rem;
+          max-height: 3.5rem;
+          max-width: 3.5rem;
+        }
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+          @media screen and (max-width: 767px) {
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+      }
+    }
+  }
+  .drop-container {
+    position: relative;
+    display: flex;
+    grid-gap: 1rem;
+    gap: 1rem;
+    background-color: #01e68c;
+    border: 0.2rem solid white;
+    border-radius: 5rem;
+    margin: 8rem 0 5rem;
+    max-width: 80rem;
+    width: 100%;
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+    .buy-btn {
+      position: absolute;
+      color: white;
+      background-color: #f32683;
+      border: 0.2rem solid white;
+      border-radius: 10rem;
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 0.2rem 2rem;
+      inset: auto auto -2.2rem 15%;
+      font-family: "dk_magical_brush" !important;
+      @media screen and (max-width: 767px) {
+        inset: auto auto -2.2rem auto;
+        font-family: "dk_magical_brush" !important;
+      }
+    }
+    .drop-box-image {
+      width: calc(100% - 40rem);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      @media screen and (max-width: 991px) {
+        width: calc(100% - 31rem);
+      }
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        max-width: 35rem;
+      }
+    }
+    .drop-box-content {
+      display: flex;
+      flex-direction: column;
+      grid-gap: 1rem;
+      gap: 1rem;
+      padding: 2rem 4rem;
+      align-items: center;
+      width: 40rem;
+      @media screen and (max-width: 991px) {
+        width: 31rem;
+        padding: 2rem 2rem;
+      }
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+      p {
+        color: white;
+        font-family: $vag-rounded-bold;
+        font-size: 1.1rem;
+        line-height: 1.2;
+        letter-spacing: 0.03rem;
+      }
+      .loot-badge {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 4rem 0;
+        img {
+          width: 12rem;
+          z-index: 1;
+        }
+        p {
+          background-color: #fe7f03;
+          color: white;
+          padding: 1.5rem 1rem 0.5rem 1rem;
+          width: 14rem;
+          box-sizing: border-box;
+          border-radius: 1rem;
+          border: 0.2rem solid white;
+          position: absolute;
+          inset: auto auto -4.5rem auto;
+          font-size: 2.5rem;
+          font-weight: bolder;
+          line-height: 1.2;
+          text-transform: uppercase;
+        }
+      }
+      .info-badge,
+      .price-badge {
+        p {
+          background-color: #683e80;
+          border: 0.2rem solid white;
+          border-radius: 5rem;
+          padding: 0.3rem 1.5rem;
+          font-size: 1.3rem;
+          color: white;
+          font-weight: bolder;
+          width: -moz-fit-content;
+          width: fit-content;
+          margin: 0;
+          text-transform: uppercase;
+          @media screen and (max-width: 767px) {
+            font-size: 0.8rem;
+          }
+          span {
+            color: #ffd836;
+          }
+        }
+      }
+      .price-badge {
+        p {
+          font-size: 2.3rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.pre-book-success {
+  color: #683f80;
+  background-image: url("../../../images/gems/pre-book-success-bg.jpg");
+  object-fit: contain;
+  padding: 6rem 3rem;
+  background-position: center;
+  background-size: contain;
+  border-radius: 4rem;
+  margin: 10rem 0 2rem;
+  z-index: 5;
+  .success-msg {
+    font-size: 3.5rem;
+    font-family: $vag-rounded-bold;
+    .pink-msg {
+      color: #f32685;
+      font-size: 6rem;
+      font-family: $dk_magical_brush;
+      line-height: 6rem;
+    }
+    p {
+      margin: 0;
+      line-height: 4rem;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    padding: 4rem 2rem;
+    .success-msg {
+      font-size: 2rem;
+      .pink-msg {
+        font-size: 3.5rem;
+        line-height: 4rem;
+      }
+      p {
+        line-height: 2rem;
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    padding: 4rem 2rem;
+    .success-msg {
+      font-size: 1.5rem;
+      .pink-msg {
+        font-size: 2.5rem;
+        line-height: 3rem;
+      }
+      p {
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
+.prebooknfts {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+}
+.preview-btn {
+  background: #f32685;
+  color: #fff;
+  padding: 0.4rem 2rem;
+  width: 14rem;
+  border: 0.3rem solid #fff;
+  border-radius: 50rem;
+  box-shadow: none;
+  max-width: -moz-fit-content;
+  // max-width: fit-content;
+  font-size: 1.3rem;
+  font-family: $vag-rounded-bold;
+  margin: 0 0.7rem;
+  &:hover {
+    transform: scale(1.1);
+    transition: all ease-out 200ms;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 0.7rem;
+    width: 11rem;
+  }
+}

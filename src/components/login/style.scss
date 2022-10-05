@@ -1,0 +1,35 @@
+.span {
+  text-align: left;
+  color: #ff3e92;
+  font-size: 1.5rem;
+  margin-inline: 0.5rem;
+}
+
+.bl_form_box .form-cntnt-box .bl_form_heading {
+  justify-content: start;
+}
+
+h5.seperator {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.6rem;
+  color: #ff3e92;
+}
+h5.seperator:before,
+h5.seperator:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+h5.seperator:before {
+  margin-right: 5px;
+}
+h5.seperator:after {
+  margin-left: 5px;
+}
+
+h5.seperator span {
+  color: black;
+  font-size: 0.7rem;
+}

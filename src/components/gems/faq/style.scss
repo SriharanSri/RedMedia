@@ -1,0 +1,27 @@
+@import "../../../styles/common";
+
+.faq {
+  padding-top: 12rem;
+  padding-bottom: 6rem;
+  font-family: $vag-rounded-regular;
+  h4 {
+    font-family: $vag-rounded-regular;
+  }
+  section {
+    h2 {
+      margin: 2rem 0;
+      font-family: $vag-rounded-regular;
+    }
+  }
+  .list-bold::marker {
+    font-size: calc(1.3rem + 0.5vw);
+    font-weight: bold;
+  }
+  .answers-list {
+    font-size: calc(1rem + 0.5vw);
+    padding: 0;
+  }
+  ul {
+    list-style: none;
+  }
+}

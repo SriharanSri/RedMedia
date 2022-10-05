@@ -1,0 +1,75 @@
+@import "../../../styles/common";
+
+.userartwork-nfts {
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 3rem;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    max-width: 100%;
+  }
+  .sec-heading {
+    font-size: 1.8rem;
+    color: #fff;
+    font-family: $dk-magical-brush;
+    margin-bottom: 3rem;
+    background: #fe3f92;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 5rem;
+    border: 0.15rem solid white;
+    
+  }
+  .reveal-btn{
+    // color: white;
+    // background-color: #f32683;
+    // border: 0.2rem solid white;
+    // border-radius: 10rem;
+     font-size: 1.75rem;
+    font-weight: bold;
+    // padding: 0.2rem 1rem;
+    // margin: 1rem 0;
+  //  inset: auto auto -2.2rem 15%;
+    // font-family: $vag-rounded-bold;
+    // transition: all ease-out 200ms;
+    // @include animename(flickerAnimation, 1s, infinite);
+   // font-size: 1.8rem;
+    color: #fff;
+    font-family: $dk-magical-brush;
+    margin-bottom: 3rem;
+    background: #fe3f92;
+    width: fit-content;
+    width: fit-content;
+    padding: 0.7rem 2rem;
+    border-radius: 5rem;
+    border: 0.15rem solid white;
+    margin-left: 1.5rem;
+    &:hover {
+      transform: scale(1.1);
+      transition: all ease-out 200ms;
+    }
+  }
+  .reveal{
+    align-items: baseline;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    // margin-left: 3%;
+  }
+  .userartwork-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    li {
+      width: calc(33% - 1rem);
+      padding: 0 0.5rem;
+      @media screen and (max-width: 767px) {
+        width: calc(50% - 1rem);
+      }
+      @media screen and (max-width: 525px) {
+        width: calc(100% - 1rem);
+      }
+    }
+  }
+}

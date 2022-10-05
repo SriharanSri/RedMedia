@@ -1,0 +1,25 @@
+.GoogleButton {
+  color: rgb(0, 0, 0);
+  width: 17%;
+  height: 47px;
+  font-size: 17px;
+  // border: unset;
+  font-family: Roboto, sans-serif;
+}
+.GoogleImg {
+  padding-left: 0;
+  padding-right: 3%;
+}
+.GoogleButton span {
+  color: black;
+}
+.GoogleButton:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+.paddingclass {
+  width: 4%;
+  height: 54px;
+}
+.GoogleImg {
+  width: 75%;
+}

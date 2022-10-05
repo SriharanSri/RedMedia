@@ -1,0 +1,71 @@
+@import "../../styles/common";
+
+.pay-list-back {
+  display: flex;
+  align-items: center;
+  font-family: $gothammedium;
+  font-size: 1.2rem;
+}
+
+.current-balance {
+  box-shadow: #00000014 0px 10px 30px;
+  border-radius: 0.7rem;
+  color: black;
+
+  .cb-title {
+    font-size: 0.8rem;
+    font-family: $gothammedium;
+  }
+
+  .cb-balance {
+    font-size: 2rem;
+    font-family: $gothambold;
+  }
+}
+
+.ac-step {
+  font-size: 0.9rem;
+  font-family: $gothammedium;
+}
+
+.ac-cc-title {
+  font-size: 1.13rem;
+  font-family: $gothambold;
+}
+
+.qr-terms {
+  font-size: 0.9rem;
+  font-family: $gothammedium;
+  color: #6d0a0a;
+  margin-bottom: 0.5rem;
+}
+
+.wallet-address {
+  font-size: 0.8rem !important;
+  font-family: $gothammedium;
+  font-weight: normal !important;
+  padding: 0.8rem 0.8rem;
+  width: 100%;
+  border-radius: 0.7rem;
+  border: 1px solid black;
+  outline: none;
+}
+
+.success-card {
+  border: 1px solid #dee2e6 !important;
+  border-radius: 0.3rem !important;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem !important;
+  font-family: $gothammedium;
+  svg {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.font-12 {
+  label {
+    font-size: 15px !important;
+    font-family: $gothambold;
+  }
+}

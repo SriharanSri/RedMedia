@@ -1,0 +1,135 @@
+@import "../../styles/common";
+
+.pay-list-back {
+  display: flex;
+  align-items: center;
+  font-family: $gothammedium;
+  font-size: 1.2rem;
+
+  svg {
+    height: 1.8rem;
+    width: 1.8rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.current-balance {
+  box-shadow: 0 4px 15px 0 #ddd;
+  border-radius: 0.7rem;
+  color: black;
+
+  .cb-title {
+    font-size: 0.8rem;
+    font-family: $gothammedium;
+
+  }
+
+  .cb-balance {
+    font-size: 2rem;
+    font-family: $gothambold;
+  }
+}
+
+.ac-step {
+  font-size: 0.9rem;
+  font-family: $gothammedium;
+}
+
+.ac-cc-title {
+  font-size: 1.13rem;
+  font-family: $gothambold;
+}
+
+.sf-amt-container {
+  display: flex;
+  align-items: center;
+  border-radius: 0.7rem;
+  border: 1px solid black;
+  overflow: hidden;
+  position: relative;
+
+  .af-amount {
+    width: 100%;
+    font-size: 1.2rem !important;
+    font-family: $gothammedium;
+    font-weight: normal !important;
+    padding: 0.8rem 0.8rem 0.8rem 0;
+    border: none;
+    outline: none;
+  }
+
+  .af-symbol {
+    font-size: 1.2rem;
+    font-family: $gothammedium;
+    padding: 0 0.2rem 0 0.8rem;
+  }
+}
+
+.btn-af-pay {
+  font-family: $gothammedium;
+  font-weight: normal !important;
+  padding: 0.6rem !important;
+}
+
+.add-card-new {
+  background-color: black;
+  border-radius: 0.6rem;
+  padding: 5rem;
+  text-align: center;
+
+  .add-card-new-text {
+    background-color: #ddd;
+    color: black;
+    padding: 0.4rem;
+    font-family: $gothammedium;
+    border-radius: 50rem;
+  }
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: none !important;
+}
+
+.loaded-info {
+  font-family: $gothammedium;
+  color: black;
+  font-size: 0.9rem;
+}
+
+.cvv-input {
+  border: 1px solid #000 !important;
+  font-size: 1.5rem !important;
+  padding: 27px 15px;
+  border-radius: 10px !important;
+}
+
+.fracto-brand {
+  font-family: $gothammedium;
+  font-size: 14px;
+
+  text-align: center;
+
+  color: #131e2b;
+
+  img {
+    margin-top: -12px;
+    margin-left: 5px;
+  }
+}
+
+.cb_usd {
+  font-size: initial;
+  color: #96847b;
+}
+
+.cb-ordertotal-lb {
+  font-size: 1.5rem;
+
+  @media screen and (max-width: 991px) {
+    font-size: .9rem;
+  }
+}
+
+.price-lb-section {
+  display: flex;
+}
